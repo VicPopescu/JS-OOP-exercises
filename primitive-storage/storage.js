@@ -52,14 +52,14 @@ class StorageWithErrorHandling extends ValidationTool {
 const storage = new StorageWithErrorHandling();
 
 storage.strings = "some random string"; // correct assign
-storage.strings = 4; // correct assign
+storage.strings = 4; // fails
 storage.strings = ["str 1", "43434"]; // correct assign
 //
 storage.numbers = "awdawd"; // fails
-storage.numbers = ["bunica 2"]; // correct assign
+storage.numbers = ["bunica 2"]; // fails
 storage.numbers = 323; // correct assign
 storage.numbers = [323, 43]; // correct assign
-storage.numbers = ""; // correct assign
+storage.numbers = ""; // fails
 //
 console.log(storage.getStrings);
 console.log(storage.getNumbers);

@@ -63,4 +63,5 @@ storage.numbers = ""; // fails
 //
 console.log(storage.getStrings);
 console.log(storage.getNumbers);
+console.log(storage.getLogHistory);
 

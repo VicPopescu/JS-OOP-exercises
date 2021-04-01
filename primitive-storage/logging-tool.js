@@ -10,7 +10,7 @@ export default class LoggingTool {
         this.history = [];
     }
 
-    get historyLog() {
+    get getLogHistory() {
         return this.history;
     }
 
